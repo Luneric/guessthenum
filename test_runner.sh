@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-g++ *.cpp -o app
-./app
+set -euo pipefail
+
+bash tests/test_game.sh
